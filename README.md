@@ -4,7 +4,7 @@ C/C++ [stb-style header-only library](https://github.com/nothings/stb) for varia
 
 ## Quick start
 
-Copy [cvariant.h](./cvariant.h) into project/include then
+Copy [cvariant.h](./cvariant.h) into project/include dir, then
 
 ```c
 #include "cvariant.h"
