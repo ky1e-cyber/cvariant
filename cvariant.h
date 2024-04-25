@@ -88,13 +88,11 @@
     } val;                                                                     \
   } name;                                                                      \
   _CVAR_TWOMAP(_CVAR_GET_FUNC, name, __VA_ARGS__)                              \
-  _CVAR_TWOMAP(_CVAR_CREATE_FUNC, name, __VA_ARGS__)                           \
-  void _CVAR_NOTHING##name()
+  _CVAR_TWOMAP(_CVAR_CREATE_FUNC, name, __VA_ARGS__)
 
 #define match(typename, name, ...)                                             \
   switch (name.tag) {                                                          \
     _CVAR_TWOTWOMAP(_CVAR_CASE, _CVAR_CASEBODY, typename, __VA_ARGS__)         \
-  }                                                                            \
-  (int){0} = 0
+  }
 
 #endif // #ifndef CVAR_INCLUDE_H
