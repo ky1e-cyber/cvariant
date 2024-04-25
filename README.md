@@ -10,6 +10,13 @@ Copy [cvariant.h](./cvariant.h) into project/include then
 #include "cvariant.h"
 ```
 
+and generate your variant structure with:
+
+```c
+// UP TO 16 TYPES CURRENTLY
+genvariant(name_for_variant, type1, ..., typeN);
+```
+
 (No need for implementation flag)
 
 ## Examples
