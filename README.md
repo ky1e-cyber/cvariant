@@ -10,7 +10,7 @@ Copy [cvariant.h](./cvariant.h) into project/include then
 #include "cvariant.h"
 ```
 
-and generate your variant structure with:
+and generate your variant structure with
 
 ```c
 // UP TO 16 TYPES CURRENTLY
